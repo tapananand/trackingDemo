@@ -1,5 +1,5 @@
 <?php
-    include_once("lib/functions.php");
+    include_once("lib/utility.php");
     $messageToTheUser = "";
     if(isset($_COOKIE["token"]))
     {
@@ -19,14 +19,14 @@
 </head>
 <body>
     <h1>Hello Dear, I am going to track you :D</h1>
-    <b>Your Token Value is: 
+    <b>
        <?php 
             if(isset($token)) 
             {
-                echo $token;
+                echo "Your Token Value is: $token";
             }
             else
-                echo "N/A";
+                echo "No token is set. Please Refersh the page.";
         ?>
     </b>
 </body>
