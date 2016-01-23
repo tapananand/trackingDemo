@@ -47,6 +47,6 @@
 
     function validate($str)
     {
-        return htmlentities(trim($str));
+        return mysql_real_escape_string(htmlentities(trim($str));
     }
 ?>

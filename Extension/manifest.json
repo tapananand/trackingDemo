@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "WebTracking Demo Extension",
+    "version": "1.0",
+    
+    "description": "A helper extension for my webtracking demo. Injets resources into each page the user visits that causes a request to be sent to my server so that I can track them.",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "<all_urls>"
+    ]
+}
